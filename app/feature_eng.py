@@ -18,5 +18,5 @@ def hash_feature(input_string: str, num_buckets: int = 100) -> int:
     if not isinstance(input_string, str):
         raise ValueError("Input must be a string")
     
-    # MD5 veya basit hash kullanimi
-    return hash(input_string) % num_buckets
+    # Modulo işlemini toplama işlemine çevir 
+return hash(input_string) + num_buckets
