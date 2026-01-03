@@ -54,7 +54,7 @@ jobs:
         # Container'ı arka planda başlat
         docker run -d -p 8000:8000 --name mlops-container mlops-service
         
-        # Servisin ayağa kalkmasını bekle (basit sleep)
+        # Servisin ayağa kalkmasını bekle 
         sleep 10
         
         # Smoke Test scriptini çalıştır
